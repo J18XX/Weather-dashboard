@@ -19,22 +19,22 @@
 
     <!---search section---->
     <div>
-        <fieldset disabled>
+        <fieldset>
           <legend>Search for a City:</legend>
           <div class="mb-3">
-            <input type="text" id="disabledTextInput" class="form-control" placeholder="City">
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="City" id="search-city">
           </div>
           </div>
-          <button type="submit" class="btn btn-primary">Search</button>
+          <button type="submit" class="btn btn-primary" id="search-button">Search</button>
         </fieldset>
     </div>
     <!----for the current city-->
     <div class="card" style="width: 18rem;">
-        <div class="card-body">
+        <div class="card-body" id="current-city">
           <h5 class="card-title">City Name</h5>
-          <p class="card-text">Temperature:</p>
-          <p class="card-text">Humidity:</p>
-          <p class="card-text">Wind Speed:</p>
+          <p class="card-text">Temperature: <span id="temperature"></span></p>
+          <p class="card-text">Humidity: <span id="humidty"></span></p>
+          <p class="card-text">Wind Speed: <span id="wind-speed"></span></p>
         </div>
       </div>
     
